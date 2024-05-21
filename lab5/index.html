@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            overflow: hidden; /* Додано, щоб виправити вирівнювання бічної панелі */
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .sidebar {
+            float: left;
+            width: 25%;
+            background-color: #f2f2f2;
+            padding: 20px;
+            box-sizing: border-box; /* Додано, щоб ширина бокової панелі включала padding */
+        }
+        .content {
+            float: left;
+            width: 75%;
+            padding: 20px;
+            box-sizing: border-box; /* Додано, щоб ширина контенту включала padding */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            clear: both; /* Додано, щоб зміщувався підвал вниз сторінки */
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>Welcome to New York</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#attractions">Attractions</a></li>
+            <li><a href="#hotels">Hotels</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Quick Info</h2>
+        <p>New York City is one of the most vibrant and diverse cities in the world.</p>
+    </div>
+
+    <div class="content">
+        <section id="about">
+            <h2>About New York</h2>
+            <p>New York City (NYC), often simply called New York, is the most populous city in the United States. With an estimated 2020 population of 8,253,213 distributed over about 302.6 square miles (784 km2), New York is also the most densely populated major city in the United States. Located at the southern tip of the state of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/1200px-New_york_times_square-terabass.jpg" alt="New York City Skyline" width="800" height="400">
+        </section>
+
+        <section id="attractions">
+            <h2>Top Attractions</h2>
+            <ul>
+                <li>Central Park</li>
+                <li>The Statue of Liberty</li>
+                <li>Times Square</li>
+                <li>The Metropolitan Museum of Art</li>
+            </ul>
+        </section>
+
+        <section id="hotels">
+            <h2>Recommended Hotels</h2>
+            <ol type="1">
+                <li>The Plaza Hotel</li>
+                <li>Hotel Empire</li>
+                <li>The Roosevelt Hotel</li>
+            </ol>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td><a href="mailto:john@example.com">john@example.com</a></td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td><a href="mailto:jane@example.com">jane@example.com</a></td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</div>
+
+<footer>
+    <p>Designed by Veronika Markevych. <a href="resume.html">Resume</a></p>
+</footer>
+
+</body>
+</html>

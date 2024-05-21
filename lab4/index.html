@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Your additional styles here */
+        /* Task 5: Additional styles for elements like paragraphs, headers, lists, etc. */
+        p {
+            font-size: 16px;
+            color: #333;
+        }
+        
+        h2 {
+            color: #007bff;
+        }
+        
+        ul {
+            list-style-type: square;
+        }
+        
+        /* Task 6: Unique classes for each table cell */
+        .cell1:hover, .cell2:hover, .cell3:hover, .cell4:hover, .cell5:hover,
+        .cell6:hover, .cell7:hover, .cell8:hover, .cell9:hover {
+            background-color: #ffcc00; /* Change background color on hover */
+        }
+        
+        .last-row td {
+            transition: color 1s ease; /* Smooth color transition for last row */
+        }
+        
+        .last-row:hover td {
+            color: #ff0000; /* Change text color on hover for last row */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to New York</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#attractions">Attractions</a></li>
+            <li><a href="#hotels">Hotels</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>About New York</h2>
+        <p class="left">New York City (NYC), often simply called New York, is the most populous city in the United States. With an estimated 2020 population of 8,253,213 distributed over about 302.6 square miles (784 km2), New York is also the most densely populated major city in the United States. Located at the southern tip of the state of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/1200px-New_york_times_square-terabass.jpg" alt="New York City Skyline" width="800" height="400">
+    </section>
+
+    <section id="attractions">
+        <h2>Top Attractions</h2>
+        <ul>
+            <li>Central Park</li>
+            <li>The Statue of Liberty</li>
+            <li>Times Square</li>
+            <li>The Metropolitan Museum of Art</li>
+        </ul>
+    </section>
+
+    <section id="hotels">
+        <h2>Recommended Hotels</h2>
+        <ol type="1">
+            <li>The Plaza Hotel</li>
+            <li>Hotel Empire</li>
+            <li>The Roosevelt Hotel</li>
+        </ol>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <table>
+            <tr>
+                <th class="cell1">Name</th>
+                <th class="cell2">Email</th>
+            </tr>
+            <tr>
+                <td class="cell3">John Doe</td>
+                <td class="cell4"><a href="mailto:john@example.com">john@example.com</a></td>
+            </tr>
+            <tr>
+                <td class="cell5">Jane Smith</td>
+                <td class="cell6"><a href="mailto:jane@example.com">jane@example.com</a></td>
+            </tr>
+            <tr class="last-row">
+                <td class="cell7">Mark Johnson</td>
+                <td class="cell8"><a href="mailto:mark@example.com">mark@example.com</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="feedback">
+        <h2>Leave Feedback</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" required></textarea>
+            </div>
+            <div>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+</div>
+
+</body>
+</html>

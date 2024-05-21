@@ -1,0 +1,25 @@
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+h2 {
+    color: #007bff;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.cell1:hover, .cell2:hover, .cell3:hover, .cell4:hover, .cell5:hover,
+.cell6:hover, .cell7:hover, .cell8:hover, .cell9:hover {
+    background-color: #ffcc00; /* Change background color on hover */
+}
+
+.last-row td {
+    transition: color 1s ease; /* Smooth color transition for last row */
+}
+
+.last-row:hover td {
+    color: #ff0000; /* Change text color on hover for last row */
+}

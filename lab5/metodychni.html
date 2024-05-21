@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lab 5. Рядкові елементи</title>
+   <style type="text/css">
+      /* блок з класом container шириною 100% батьківського блоку, але 
+не більше 1000px і не менше 320px, та з висотою 400px Контент, що 
+не вміщується по горизонталі, буде приховано. Контент, що не 
+вміщується по вертикалі буде викликати появу смуги прокрутки 
+всередині блоку */
+      div.container {
+         width: 100%;
+         max-width: 1000px;
+         min-width: 320px;
+         height: 400px;
+         overflow-x: hidden;
+         overflow-y: auto;
+      }
+
+      #header {
+         background: #dbdbdb;
+         border-bottom: 3px solid #777777;
+         margin: 0 0 30px;
+         text-align: center;
+      }
+
+      #header h1 {
+         font-size: 36px;
+      }
+
+      #main {
+         margin: 0px;
+         padding: 0px;
+         width: 100%;
+      }
+
+      #side-menu {
+         box-sizing: border-box;
+         float: right;
+         padding: 20px;
+         width: 20%;
+      }
+
+      #content {
+         float: left;
+         width: 80%;
+      }
+
+      #footer {
+         clear: both;
+         margin: 30px 0 0;
+         padding: 15px;
+      }
+
+      #footer p {
+         font-size: 12px;
+         text-align: center;
+      }
+
+      .menu {
+         width: 220px;
+         /* Ширина меню */
+         padding: 5px;
+         /* Відсупи від рамки до пунктів меню */
+         border: 1px solid #000;
+         /* Рамка навколо меню */
+      }
+
+      .menu P {
+         margin: 0 0 2px;
+      }
+
+      .menu A {
+         /*стиль для посилання*/
+         padding: 2px;
+         /*Відступ від рамки навколо посилання до тексу 
+*/
+         display: block;
+         /* Посилання відобразити як блочний 
+елемент */
+         border: 1px solid #fff;
+         /* Приховуємо рамку 
+навколо */
+         text-decoration: none;
+         /* Забираємо підкреслення у 
+посилань */
+      }
+
+      .menu A:hover {
+         /*стиль для посилання, на яке наводиться мишка*/
+         background: #faf3d2;
+         /* Коір фону під посиланням */
+         color:
+            #800000;
+         /* Новий колір посилання */
+         border: 1px dashed #634f36
+            /* Рамка навколо тексту */
+      }
+
+      .n_name {
+         background: #fc0;
+         /* 
+Колір фону */
+         margin-left: 1em;
+         /* 
+Відступ зліва */
+      }
+
+      .code {
+         padding: 1px;
+         /* поля навколо тексту */
+         border: 1px dotted maroon;
+         /* рамка */
+         color:
+            navy;
+         /* колір тексту */
+      }
+
+      .notetitle {
+         border: 1px solid black;
+         /* рамка */
+         border-bottom: none;
+         /* забираємо нижню межу рамки */
+         padding: 3px;
+         /* поля навколо тексту */
+         display:
+            inline;
+         /* відобразити як рядковий елемент */
+         background: #ffeebf;
+         /* колір фону */
+         font-weight:
+            bold;
+         /* виділити жирним */
+         font-size: 0.9em;
+         /* 
+розмір шрифту */
+         margin: 0;
+         /* забираємо відступи */
+         white-space: nowrap;
+         /* забороняємо перенос тексту */
+      }
+
+      .note {
+         border: 1px solid #634f36;
+         /* рамка */
+         background: #f3f0e9;
+         /* колір 
+фону */
+         padding: 7px;
+         /* поля навколо 
+тексту */
+         margin: 0 0 1em 0;
+         /* значення 
+відступів */
+      }
+
+      div {
+         display: inline-block;
+      }
+
+      .photo {
+         background: #d9dabb;
+         /* Колір фону */
+         width: 270px;
+         /* Ширина */
+         margin: 0 10px 10px 0;
+         /* 
+ВІдступи */
+         padding: 10px 0;
+         /* Поля зверху і знизу 
+*/
+         text-align: center;
+         /* Вирівнювання по центру */
+         display: inline-block;
+         /* Рядково-блочний елемент */
+      }
+
+      .photo img {
+         border: 2px solid #8b8e4b;
+         /* рамка */
+      }
+
+      .photo p {
+         margin: 0;
+         /* відступи */
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <h1>Заголовок</h1>
+   </header>
+   <div id="main">
+      <nav>
+         <h2>Навігація</h2>
+         <ul>
+            <li><a href="#">Розділ 1</li>…
+         </ul>
+      </nav>
+      <div id="content">
+         <p>Зміст</p>
+      </div>
+   </div>
+   <div id="container">
+      <div id="intro">
+         <div id="pageHeader">
+            <h1>css Zen Garden</h1>
+            <h2>The Beauty of CSS Design</h2>
+         </div>
+         <div id="mainContent">
+            <p class="p1">A demonstration of what can be
+               accomplished visually through CSS - based design. Select any
+               style sheet from the list to load it into this page.</p>
+         </div>
+      </div>
+   </div>
+   <div class="menu">
+      <p><a href="l.html">Основи html</a></p>
+      <p><a href="2.html">Теги форматування тексту</a></p>
+      <p><a href="3.html">Теги вставки зображень</a></p>
+      <p><a href="4.html">Списки в html</a></p>
+   </div>
+   <p><span class="n_name">Рядкові елементи</span> зручно
+      використовувати для зміни вигляду і стилю тексту, зокрема,
+      окремих символів і слів. Для цієї мети зазвичай застосовується
+      універсальний тег <span class="code">span</span>, який
+      самостійно ніяк не змінюйте вміст, але для нього легко задавати
+      стилі через класи або ідентифікатори. За рахунок цього,
+      використовуючи даний тег, можна легко управляти виглядом окремих
+      фрагментів тексту або малюнків.
+   </p>
+   <p class="notetitle">Верстка сайтів</p>
+   <p class="note">HTML спочатку замислювався як мова, якій
+      не потрібні кошти оформлення, такі як колір, розмір, рамки або
+      щось подібне. Розроблений в Європейському інституті фізики
+      частинок (CERN), HTML був іграшкою вчених, їх, перш за все,
+      цікавила логіка інформації, а не її візуальне уявлення. Тоді ще
+      не існувало поняття веб-дизайну і верстки як такої, всі сайти за
+      своїм оформленням були практично однотипними, в стилі
+      академічного дизайну. </p>
+   <div class="photo">
+      <p><img src="images/001.jpg" alt="" /></p>
+      <p class="caption">Кафедральний собор</p>
+   </div>
+   <div class="photo">
+      <p><img src="images/002.jpg" alt="" /></p>
+      <p class="caption">Замок</p>
+   </div>
+   <div class="photo">
+      <p><img src="images/003.jpg" alt="" /></p>
+      <p class="caption">Пішохідний міст</p>
+   </div>
+   <div class="photo">
+      <p><img src="images/004.jpg" alt="" /></p>
+      <p class="caption">Синагога</p>
+   </div>
+   <div class="photo">
+      <p><img src="images/005.jpg" alt="" /></p>
+      <p class="caption">Цвітіння сакур</p>
+   </div>
+   <div class="photo">
+      <p><img src="images/006.jpg" alt="" /></p>
+      <p class="caption">Набережна</p>
+   </div>
+   <footer>
+      <p>…</p>
+   </footer>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Підключення глобальних стилів</title>
+   <style type="text/css">
+      H1 {
+         font-size:
+            120%;
+         font-family: Arial, Helvetica,
+            sans-serif;
+         color: green;
+      }
+
+      button {
+         background: #fff;
+         border: 2px solid #ff0000;
+         border-radius: 5px;
+         color: #ff0000;
+         font-size: 18px;
+         font-weight: bold;
+         text-transform: uppercase;
+      }
+
+      /* Посилання синього кольору з розміром літер 14 пікселів */
+      a {
+         color: #0000ff;
+         font-size: 14px;
+      }
+
+      /* Посилання з класом bigger буде синього кольору з розміром 
+літер 
+16 пікселів */
+      a.bigger {
+         font-size: 16px;
+      }
+
+      /* Посилання, що знаходиться всередині маркованого списку, буде 
+червоного кольору з розміром літер 14 пікселів */
+      ul a {
+         color: #ff0000;
+      }
+
+      /* Посилання з класом bigger, що знаходиться всередині 
+маркованого списку, буде червоного кольору з розміром літер 16 
+пікселів */
+      button {
+         background: #fff;
+      }
+
+      button:hover {
+         background: #ff0000;
+      }
+
+      p {
+         font-size: 14px;
+      }
+
+      p:first-child {
+         font-size: 16px;
+      }
+
+      p:nth-child(2n) {
+         background: #eeeeee;
+      }
+
+      p.ask {
+         /* тег абзацу і селектор класу */
+         font-style: italic;
+         /* курсив */
+         font-weight:
+            bold;
+         /* напівжирний */
+         font-family: Arial, sansserif;
+         /*шрифт без засічок */
+         font-size: 10pt;
+         /* розмір шрифту*/
+         color: gray;
+         /* сірий колір тексту */
+         margin-left: 15px
+            /* відступ зліва */
+      }
+
+      p.answer {
+         font-family: 'Times New Roman', serif;
+         font-size: 12 pt;
+         color: red;
+         margin-left: 15px
+      }
+
+      i>b {
+         font-weight: normal;
+      }
+
+      p+h1 {
+         margin-top: 20px;
+      }
+
+      #green {
+         color: green;
+      }
+
+      #red {
+         color:
+            red;
+      }
+   </style>
+</head>
+
+<body>
+   <H1 style="font-size: 120%; font-family: Verdana, Arial, 
+Helvetica, sans-serif; color: #336">Hello, world!</H1>
+   <H1 style="font-size: 36px; font-family: Times, serif; 
+color: red;">Hello, world!</H1>
+   <H1>Hello, world!</H1>
+   <p class="ask">Питання журналіста</p>
+   <p class="answer">Відповідь на питання</p>
+   <p id="green"> Текст, відображений зеленим кольором</p>
+   <p id="red">Текст, відображений червоним кольором</p>
+</body>
+
+</html>
